@@ -117,7 +117,7 @@ class Manager
      * Get body content from response and decode it.
      *
      * @param  \GuzzleHttp\Psr7\Response $response
-     * @return array
+     * @return object
      */
     public function getBody(Response $response)
     {

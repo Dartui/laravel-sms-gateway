@@ -25,7 +25,7 @@ class Client
      * Get all messages.
      *
      * @param  integer|null $page
-     * @return array
+     * @return object
      */
     public function getMessages($page = null)
     {
@@ -36,7 +36,7 @@ class Client
      * Get single message.
      *
      * @param  integer $id
-     * @return array
+     * @return object
      */
     public function getMessage($id)
     {
@@ -48,7 +48,7 @@ class Client
      *
      * @param  \Dartui\SmsGateway\Notification\Message|array|string $message
      * @param  integer|string|null $number
-     * @return array
+     * @return object
      */
     public function sendMessage($message, $number = null)
     {
@@ -63,7 +63,7 @@ class Client
      *
      * @param  \Dartui\SmsGateway\Notification\Message|array|string $message
      * @param  integer|string|null $number
-     * @return array
+     * @return object
      */
     protected function getMessageParams($message, $number = null)
     {
@@ -88,7 +88,7 @@ class Client
      * Get all devices.
      *
      * @param  integer|null $page
-     * @return array
+     * @return object
      */
     public function getDevices($page = null)
     {
@@ -99,7 +99,7 @@ class Client
      * Get single device.
      *
      * @param  integer $id
-     * @return array
+     * @return object
      */
     public function getDevice($id)
     {
@@ -110,7 +110,7 @@ class Client
      * Get all contacts.
      *
      * @param  integer|null $page
-     * @return array
+     * @return object
      */
     public function getContacts($page = null)
     {
@@ -121,7 +121,7 @@ class Client
      * Get single contact.
      *
      * @param  integer $id
-     * @return array
+     * @return object
      */
     public function getContact($id)
     {
@@ -133,7 +133,7 @@ class Client
      *
      * @param  string $name
      * @param  integer|string $number
-     * @return array
+     * @return object
      */
     public function createContact($name, $number)
     {
@@ -145,7 +145,7 @@ class Client
      *
      * @param  string $url
      * @param  integer|null $page
-     * @return array
+     * @return object
      */
     protected function getAll($url, $page = null)
     {
@@ -157,7 +157,7 @@ class Client
      *
      * @param  string $url
      * @param  integer $id
-     * @return array
+     * @return object
      */
     protected function getSingle($url, $id)
     {
@@ -172,7 +172,7 @@ class Client
      * @param  string $method
      * @param  string $url
      * @param  array  $params
-     * @return array
+     * @return object
      */
     protected function request($method, $url, $params = [])
     {
