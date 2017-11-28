@@ -1,0 +1,33 @@
+{
+    "name": "dartui/laravel-sms-gateway",
+    "description": "smsgateway.me integration for Laravel",
+    "keywords": ["laravel", "smsgateway", "sms", "api"],
+    "license": "MIT",
+    "homepage": "http://grabania.pl",
+    "support": {
+        "issues": "https://github.com/Dartui/laravel-sms-gateway/issues",
+        "source": "https://github.com/Dartui/laravel-sms-gateway"
+    },
+    "authors": [
+        {
+            "name": "Krzysztof Grabania",
+            "email": "krzysztof@grabania.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "laravel/framework": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dartui\\SmsGateway\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dartui\\SmsGateway\\ServiceProvider"
+            ]
+        }
+    }
+}

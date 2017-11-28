@@ -1,2 +1,3 @@
-# laravel-sms-gateway
-smsgateway.io integration for Laravel
+# Laravel smsgateway.me
+
+smsgateway.me integration for Laravel
